@@ -56,6 +56,10 @@ document.getElementById('prev').addEventListener('click', () => {
 // Fetch verses and start the carousel when the page loads
 window.onload = fetchVerses;
 
+document.querySelector('.hamburger').addEventListener('click', function() {
+    const nav = document.querySelector('header nav');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+});
 
 
 
