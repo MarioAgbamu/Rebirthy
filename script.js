@@ -40,7 +40,7 @@ function showPrevVerse() {
 // Function to start the carousel
 function startCarousel() {
     clearInterval(carouselInterval);
-    carouselInterval = setInterval(showNextVerse, 100000); // Change verse every 1 minutes
+    carouselInterval = setInterval(showNextVerse, 30000); // Change verse every 1 minutes
 }
 
 // Event listeners for navigation buttons
