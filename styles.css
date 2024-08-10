@@ -14,7 +14,7 @@ body {
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: auto;
-    padding: 60px;
+    padding: 40px 20px;
     margin-bottom: 20px;
 }
 
@@ -44,6 +44,13 @@ body {
     border-radius: 5px;
 }
 
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
 
 header {
     display: flex;
@@ -52,7 +59,7 @@ header {
     background-color: #000;
     color: white;
     padding: 10px 20px;
-    
+    flex-wrap: wrap;
 }
 
 header .logo {
@@ -64,6 +71,7 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -81,11 +89,10 @@ header .auth-links a {
     margin-left: 10px;
 }
 
-.logo img{
+.logo img {
     width: 50px;
     padding: 0;
     margin: 0;
-    
 }
 
 .main-section {
@@ -94,7 +101,6 @@ header .auth-links a {
     border: 1px solid rgb(172, 172, 172);
     margin-bottom: 20px;
 }
-
 
 .text-content {
     max-width: 100%;
@@ -108,8 +114,6 @@ header .auth-links a {
     border: 1px solid black;
     margin: 0;
     padding: 0;
-    
-
 }
 
 .extra-content {
@@ -137,11 +141,14 @@ footer {
     justify-content: space-around;
     padding: 20px 0;
     border-bottom: 1px solid #000;
+    flex-wrap: wrap;
 }
 
 .footer-section {
     flex: 1;
     padding: 0 20px;
+    min-width: 200px;
+    margin-bottom: 20px;
 }
 
 .footer-section h3 {
@@ -178,12 +185,56 @@ footer {
     padding: 10px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
 
+    header nav ul li {
+        margin: 5px 0;
+    }
 
-#prev {
-    left: 10px;
+    .carousel-container {
+        padding: 20px;
+    }
+
+    .image-content img {
+        width: 80%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        padding: 10px 0;
+    }
 }
+
+@media (max-width: 480px) {
+    .carousel-container {
+        padding: 15px;
+    }
+
+    #prev, #next {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .image-content img {
+        width: 100%;
+    }
+}
+
 
 #next {
     right: 10px;
