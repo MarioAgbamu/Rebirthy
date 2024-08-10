@@ -239,6 +239,9 @@ footer {
     #prev, #next {
         display: none;
     }
+    #description{
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -249,4 +252,5 @@ footer {
     .image-content img {
         width: 100%;
     }
+    
 }
