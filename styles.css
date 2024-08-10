@@ -192,6 +192,12 @@ footer {
         align-items: flex-start;
     }
 
+    header nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
     header nav ul {
         flex-direction: column;
         width: 100%;
@@ -199,6 +205,16 @@ footer {
 
     header nav ul li {
         margin: 5px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 1.5em;
+        margin-left: auto;
     }
 
     .carousel-container {
@@ -218,6 +234,11 @@ footer {
         text-align: center;
         padding: 10px 0;
     }
+
+    /* Hide prev/next buttons on mobile */
+    #prev, #next {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -225,17 +246,7 @@ footer {
         padding: 15px;
     }
 
-    #prev, #next {
-        padding: 5px;
-        font-size: 14px;
-    }
-
     .image-content img {
         width: 100%;
     }
-}
-
-
-#next {
-    right: 10px;
 }
