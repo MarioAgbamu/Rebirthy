@@ -208,7 +208,7 @@ footer {
     }
 
     .hamburger {
-        display: block;
+        display: relative;
         cursor: pointer;
         background-color: transparent;
         border: none;
